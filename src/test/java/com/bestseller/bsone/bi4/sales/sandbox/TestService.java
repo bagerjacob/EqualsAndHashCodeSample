@@ -17,6 +17,7 @@ public class TestService {
   @Test
   @DisplayName(" test using EqualsAndHashFalse, comparing next too each other ")
   void testModels() {
+    log.info("test using EqualsAndHashFalse, comparing next too each other ");
     EqualsAndHashFalse modelA = new EqualsAndHashFalse();
     modelA.setName(faker.name().fullName());
     modelA.setVersion(1L );
@@ -32,6 +33,7 @@ public class TestService {
   @Test
   @DisplayName(" test using EqualsAndHashTrue, comparing next too each other ")
   void testModels2() {
+    log.info(" test using EqualsAndHashTrue, comparing next too each other ");
     EqualsAndHashTrue modelA = new EqualsAndHashTrue();
     modelA.setName(faker.name().fullName());
     modelA.setVersion(1L );
@@ -47,7 +49,7 @@ public class TestService {
   @DisplayName(" test using EqualsAndHashFalse in a set ")
   void testHashSetWithFalse() {
     HashSet<EqualsAndHashFalse> set = new HashSet<>();
-
+    log.info(" test using EqualsAndHashFalse in a set ");
     EqualsAndHashFalse modelA = new EqualsAndHashFalse();
     modelA.setName(faker.name().fullName());
     modelA.setVersion(1L );
@@ -64,7 +66,7 @@ public class TestService {
   @DisplayName(" test using EqualsAndHashTrue in a set ")
   void testHashSetWithTrue() {
     HashSet<EqualsAndHashTrue> set = new HashSet<>();
-
+    log.info(" test using EqualsAndHashTrue in a set ");
     EqualsAndHashTrue modelA = new EqualsAndHashTrue();
     modelA.setName(faker.name().fullName());
     modelA.setVersion(1L );
