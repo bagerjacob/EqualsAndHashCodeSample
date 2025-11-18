@@ -10,7 +10,7 @@
     <parent>
         <groupId>com.bestseller.bestone.bi4.sales.dependencies</groupId>
         <artifactId>sales-spring-boot-starter-parent</artifactId>
-        <version>3.2.2.57</version>
+        <version>3.2.5.4</version>
         <relativePath/>
     </parent>
     <properties>
@@ -37,6 +37,11 @@
             <groupId>com.bestseller.bestone.bi4.sales.standardutils</groupId>
             <artifactId>test-utils</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.1.0</version>
         </dependency>
     </dependencies>
 
